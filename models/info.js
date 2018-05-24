@@ -25,5 +25,5 @@ var info = {
   }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (Controller.js).
 module.exports = info;
