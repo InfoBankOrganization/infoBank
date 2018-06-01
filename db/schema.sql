@@ -1,5 +1,3 @@
-### Schema
-
 CREATE DATABASE info_db;
 USE info_db;
 
