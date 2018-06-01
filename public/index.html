@@ -1,35 +1,249 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>InfoBank</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <meta charset="utf-8" />
+  <title>Info Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-5R1YdaymXlWnSzNCZhBMJnL6ZRBonq3cnj8A38eihLMaAb66oNJhErrQy9jIGHkl"
+    crossorigin="anonymous">
     
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">InfoBank</h1>
-          <p class="lead">Academic answers and questions</p>
-        </div>
-      </div>
-      <div class = "container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+     
+      <h6> <img src="/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif"  width="25" lenght="20">Info Bank </h6>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" id="searchTxt" placeholder="Search">
+         <!-- Script that allow to search info through the search bar -->
+      <script>
+          var input = document.getElementById("searchTxt");
+      
+          function searchURL() {
+               window.location = "http://www.myurl.com/search/" + input.value;
+          }
+      </script> 
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <hr>
+
+  <!-- end nav -->
+  <div main="container">
+
+     <!-- <h4>Expand your Knowlege at Info Bank</h4>
+ <img src="/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/library.jpeg" class="img-fluid" alt="" width="480"  height="600"> -->
+          
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <div id="user">
+        <h4>Academic Staff | Student</h4>
+
         <form>
+        
+            <div class="signup">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
             <div class="form-group">
-              <label for="InputQuestion">Questions</label>
-              <input type="question" class="form-control" id="InputQuestion" aria-describedby="questionHelp" placeholder="Enter Question">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>  <p>Or sign up <a href="/signup">here</a></p>
+          </form>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script type="text/javascript" src="js/util.js"></script>
+          <script type="text/javascript" src="js/login.js"></script>
+          <script type="text/javascript" src="js/signup.js"></script>
+          <br />
+    
+        <fieldset>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Question</label>
+              <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
               <small id="questionHelp" class="form-text text-muted"></small>
             </div>
-            <div class="form-group">
-              <label for="InputAnswer">Answer</label>
-              <input type="answer" class="form-control" id="InputAnswer" placeholder="Enter Answer">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-          
+
+          <div class="form-group">
+            <label for="inputAnwser">Answer</label>
+            <input type="email" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
+            <small id="answerHelp" class="form-text text-muted"></small>
           </div>
-</body>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+              </div>
+              <div class="input-group-append">
+                <span class="input-group-text" id="" >Upload</span>
+              </div>
+              <!---->
+              <!-- <label class="btn btn-primary" for="my-file-selector">
+                <input id="my-file-selector" type="file" style="display:none" 
+                onchange="$('#upload-file-info').html(this.files[0].name)">
+                Button Text Here
+            </label>
+            <span class="label label-info' id=upload-file-info"></span> -->
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+<!-- img -->
+  <!-- <h4>Expand your Knowlege at Info Bank</h4> -->
+ <img src="/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/library.jpeg" class="img-responsive center-block" alt="" width="730"  height="400">
+     <!--/span-->
+      <section class = "sidebar1"> 
+     <div class="col-md-3">
+      <div class="sidebar1-nav-fixed pull-left affix">
+          <div class="well">
+              <ul class="nav ">
+                  <li class="nav-header">RutgersBootcamp</li>
+                  <li class="active"><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li class="nav-header">WorcesterTech</li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li class="nav-header">LIUPost</li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                  <li><a href="#">Link</a>
+                  </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li class="nav-header">BrooklynCollege</li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">Link</a>
+                </li>
+                <li><a href="#">More</a></li>
+              </ul>
+          </div>
+          <!--/.well -->
+      <!-- </div> -->
+      <!--/sidebar-nav-fixed -->
+  </div>
+  <!--/span-->
+</div>
+ </section>
+</div>
+<!--/row-->
+
+    <script type="text/javascript">
+      //Add info 
+      $("#add-btn").on("click", function (event) {
+        event.preventDefault();
+        newInput = {
+          question: $("#question").val().trim(),
+          answer: $("#answer").val().trim(),
+        };
+
+        //Display info
+        $.post("api/info", newInfo)
+          .then(function (data) {
+            console.log("index.html", data);
+            alert("adding info...");
+          });
+
+      });
+    </script>
+  
+  <!-- <script type="text/javascript">
+    $( document ).ready( function() {
+      $( "#update" ).on( "click", function( a ) {
+            var $ = $( this ).find("/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif") ,
+              animateClass = "/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif-refresh-animate";
+    
+            $/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif.addClass( animateClass );
+            // setTimeout is to indicate some async operation
+            window.setTimeout( function() {
+              $/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif.removeClass( animateClass );
+            }, 2000 );
+        });    
+    });
+    </script> -->  
+
+    <div class="footer">
+        <div class="container">
+          <span>
+                <a href=" https://www.facebook.com">Facebook</a>  | 
+                <a href="https://twitter.com">Twitter</a>  |
+                <a href="https://www.youtube.com/">Youtube</a>  |
+                <a href=" https://github.com/">gitHub</a>  | 
+                <a href="https://www.linkedin.com/">Linkedin</a>  
+              </span>
+        </div>
+      </div>
+  
+    </body>
 </html>
