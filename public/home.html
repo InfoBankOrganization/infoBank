@@ -14,188 +14,109 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/logout">
-              Logout
-            </a>
-          </div>
+    <div class="jumbotron" style="background-color:inherit">
+        <div class="container" >
+            <h1><strong>InfoBank</strong></h1>
+            <p><h4>Expand your Knowlege at Info Bank</h4></p>
         </div>
-      </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-     
-      <h6> <img src="./image/favicons-r.gif"  width="25" lenght="20">Info Bank </h6>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
+    </div>
+    <div main="container">
+      <div class="container1">
+          <div class="row">
+            <div class="Absolute-Center is-Responsive">
+              <div class="col-sm-12 col-md-10 col-md-offset-1">
+    <div class="center-block" style="width:700; height: 300px; background-color:#001900;">
+      <nav class="navbar navbar-expand-lg"> 
+        <!-- <"navbar-dark bg-dark"> -->
+          <a class="navbar-brand" href="#">
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Payment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" id="searchTxt" placeholder="Search">
-         <!-- Script that allow to search info through the search bar -->
-      <script>
-          var input = document.getElementById("searchTxt");
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
       
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+           </div>
+           <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="/logout">
+                    Logout
+                  </a>
+                </div>
+              </div>
+            </nav>
+        </nav>
+  
+      
+      <form class="form-inline my-2 my-lg-2" >
+       
+        <input class="form-control mr-sm-2" type="text" id="searchTxt" placeholder="">
+       <script>
+          var input = document.getElementById("searchTxt");
           function searchURL() {
                window.location = "http://www.myurl.com/search/" + input.value;
           }
       </script> 
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  
-  <hr>
-
-  <!-- end nav -->
-  <div main="container">
-
-     <!-- <h4>Expand your Knowlege at Info Bank</h4>
- <img src="/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/library.jpeg" class="img-fluid" alt="" width="480"  height="600"> -->
-          
-    <!-- Sidebar -->
-    <section class="sidebar">
-      <div id="user">
-        <h4>Academic Staff | Student</h4>
-
-        <form>
- 
+    <button class="btn btn-secondary my-2 my-sm-2" type="submit">Search Topic</button>
+   
     
-        <fieldset>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Question</label>
-              <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
-              <small id="questionHelp" class="form-text text-muted"></small>
-            </div>
-          </form>
+    <!-- end nav -->
+       <div id="user">
+         <h4>Academic Staff | Student</h4>
+         <form>
+           <fieldset>
+            
+               <label for="exampleInputQuestion1"></label>
+               <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
+               <small id="questionHelp" class="form-text text-muted"></small>
 
-          <div class="form-group">
-            <label for="inputAnwser">Answer</label>
-            <input type="email" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
-            <small id="answerHelp" class="form-text text-muted"></small>
-          </div>
+             <label for="inputAnwser"></label>
+             <input type="email" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
 
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </fieldset>
-        <hr>
-
-        <fieldset>
-          <div class="form-group">
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile02">
-                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-              </div>
-              <div class="input-group-append">
-                <span class="input-group-text" id="" >Upload</span>
-              </div>
-              <!---->
-              <!-- <label class="btn btn-primary" for="my-file-selector">
-                <input id="my-file-selector" type="file" style="display:none" 
-                onchange="$('#upload-file-info').html(this.files[0].name)">
-                Button Text Here
-            </label>
-            <span class="label label-info' id=upload-file-info"></span> -->
-            </div>
-          </div>
-        </fieldset>
+             <button class="btn btn-secondary my-2 my-sm-2" type="submit">Submit</button>
+ 
+   
+             <div class="input-group mb-3">
+               <div class="custom-file">
+                 <input type="file" class="custom-file-input" id="inputGroupFile02">
+                 <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+               </div>
+               <div class="input-group-append">
+                 <span class="input-group-text" id="">Upload</span>
+               </div>
+             </div>
+      
+          </fieldset>
+         </form>
+         </div>
+        </form>
       </div>
-    </section>
-<!-- img -->
-  <!-- <h4>Expand your Knowlege at Info Bank</h4> -->
- <img src="./image/library.jpeg" class="img-responsive center-block" alt="" width="730"  height="400">
-     <!--/span-->
-      <section class = "sidebar1"> 
-     <div class="col-md-3">
-      <div class="sidebar1-nav-fixed pull-left affix">
-          <div class="well">
-              <ul class="nav ">
-                  <li class="nav-header">RutgersBootcamp</li>
-                  <li class="active"><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li class="nav-header">WorcesterTech</li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li class="nav-header">LIUPost</li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                  <li><a href="#">Link</a>
-                  </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li class="nav-header">BrooklynCollege</li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">Link</a>
-                </li>
-                <li><a href="#">More</a></li>
-              </ul>
-          </div>
-          <!--/.well -->
-      <!-- </div> -->
-      <!--/sidebar-nav-fixed -->
-  </div>
-  <!--/span-->
-</div>
- </section>
-</div>
-<!--/row-->
+      </div>
+              </div>
+              </div>
+            </div>
 
     <script type="text/javascript">
+    // control c to restart the server/ node server.js to connect to the server. 
       //Add info 
-      $("#add-btn").on("click", function (event) {
+      $("#qbtn").on("click", function (event) {
         event.preventDefault();
         newInput = {
           question: $("#question").val().trim(),
@@ -203,40 +124,19 @@
         };
 
         //Display info
-        $.post("api/info", newInfo)
+        $.post("api/question", newInput)
           .then(function (data) {
-            console.log("index.html", data);
+            console.log("home", data);
             alert("adding info...");
           });
 
       });
-    </script>
-  
-  <!-- <script type="text/javascript">
-    $( document ).ready( function() {
-      $( "#update" ).on( "click", function( a ) {
-            var $ = $( this ).find("/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif") ,
-              animateClass = "/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif-refresh-animate";
-    
-            $/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif.addClass( animateClass );
-            // setTimeout is to indicate some async operation
-            window.setTimeout( function() {
-              $/Users/nicolecooper/Documents/Rutgers_2018/infoBank/public/image/favicons-r.gif.removeClass( animateClass );
-            }, 2000 );
-        });    
-    });
-    </script> -->  
+   </script>
+    </div>
 
     <div class="footer">
-        <div class="container">
-          <span>
-                <a href=" https://www.facebook.com">Facebook</a>  | 
-                <a href="https://twitter.com">Twitter</a>  |
-                <a href="https://www.youtube.com/">Youtube</a>  |
-                <a href=" https://github.com/">gitHub</a>  | 
-                <a href="https://www.linkedin.com/">Linkedin</a>  
-              </span>
-        </div>
-      </div>     
-    </body>
-</html>
+        <p>gitHub.com</p>
+      </div>
+</body>
+ </html>
+ 

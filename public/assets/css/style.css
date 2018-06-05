@@ -1,141 +1,67 @@
 
-  /* #main container{
-    width:1020px;
-   */
-    
+   .jumbotron{
+    color:#001900;
+    /* background-color:none !important; */
+    }
 
-    .img{
-    margin: 0 auto;  
+    h1{
+        font-size: 60px;
+    }
+
+   body {
+    background: url(/Users/nicolecooper/infoBank/public/image/403d21c4a993c6befb4b058833a3119d.png);
+  }
+
+   #main-container{
+      width: 940px;
   } 
-
-    .sidebar{
-      background:inherit;
-      padding:30px;
-      width:267px;
-      max-width:270px;
-      float: right;
-      /* border: 1px solid #6c757d;
-      margin-right: 20px; */
-    }
-    .sidebar1{
-      background:inherit;
-      padding:30px;
-      width:267px;
-      max-width:270px;
-      float: left; 
+    
+    .Absolute-Center {
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
       
-    }
+      .Absolute-Center.is-Responsive {
+        width: 50%; 
+        height: 50%;
+        min-width: 700px;
+        max-width: 650px;
+        padding: 40px;
+      }
+      
+      #logo-container1{
+        margin: auto;
+        margin-bottom: 10px;
+        width:700px;
+        height:30px;
+      }
 
-    #a{
-      clear : both;
-      margin-top: 10px;
-      float: right;
-      margin-right:25px;
-    }
+    .form-inline 
+     {
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center }
+       p {
+        margin: 0 }
 
-/* footer {
-  clear : both;
-  padding : 5px;
-  margin-top : 5px;
-  height : 5px;
-  font-size : 0.8em;
-  /* border-top : 1px solid #6c757d; */
-  /* color :inherit;
-  background : inherit;
-  }
-  footer a:link, #footer a:visited {
-  background : inherit;
-  color : #6c757d;
-  text-decoration : none;
-  }
-  footer a:hover {
-  border-bottom : 1px dashed #6c757d;
-  background : inherit;
-  color : #6c757d;
-  } */ 
-  
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:5%;
+            background-color:#001900;
+            color: white;
+            text-align: left;
+            margin: 0;
+         }
 
- /* a-refresh-animate {
-    animation-name: rotateThis;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  @keyframes rotateThis {
-    from { transform: scale( 1 ) rotate( 0deg );   }
-    to   { transform: scale( 1 ) rotate( 360deg ); }
-  } */
-  
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-  
-  body {
-    margin-bottom: 150px;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border: 1px solid #6c757d;
-    background-color:inherit;
-    text-align: center;
-  }
-  
-  .container{
-    margin-top: 50px;
-    color: #fff;
-    width: 100%;
-  }
-  
-  .fa-twitter {
-      color: #4099FF;
-  }
-  
-  .fa-facebook {
-      color: #3B5998;
-  }
-  
-  .fa-youtube-play {
-      color: #e52d27;
-  }
-  
-  .fa-gitHub {
-      color: black;
-  }
-  
-  .fa-linkedin {
-      color: #007bb6;
-  }
-  
-  .fa {
-      opacity: 0.7;
-      transition: 1s;
-      -webkit-transition: 1s;
-  }
-  
-  .fa:hover{
-      opacity: 1;
-      transition: 1s;
-      -webkit-transition: 1s;
-  }
-
-  /* Padding - just for asthetics on Bootsnipp.com */
-body { margin-top:20px; }
-
-.container3-center{
-  /* margin-top: 50px; */
-  width: 900px;
-  margin: 0 auto;  
-  color: #fff;
-}
+   
 
 /* CSS for Credit Card Payment form */
-.credit-card-box .panel-title {
+/* .credit-card-box .panel-title {
     display: inline;
     font-weight: bold;
 }
@@ -143,24 +69,24 @@ body { margin-top:20px; }
     border-color: red;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
-}
-.credit-card-box label.error {
+} */
+/* .credit-card-box label.error {
   font-weight: bold;
   color: red;
   padding: 2px 8px;
   margin-top: 2px;
-}
-.credit-card-box .payment-errors {
+} */
+/* .credit-card-box .payment-errors {
   font-weight: bold;
   color: red;
   padding: 2px 8px;
   margin-top: 2px;
-}
-.credit-card-box label {
+} */
+/* .credit-card-box label {
     display: block;
-}
+} */
 /* The old "center div vertically" hack */
-.credit-card-box .display-table {
+/* .credit-card-box .display-table {
     display: table;
 }
 .credit-card-box .display-tr {
@@ -170,8 +96,8 @@ body { margin-top:20px; }
     display: table-cell;
     vertical-align: middle;
     width: 50%;
-}
+} */
 /* Just looks nicer */
-.credit-card-box .panel-heading img {
+/* .credit-card-box .panel-heading img {
     min-width: 180px;
-}
+}  */

@@ -8,3 +8,12 @@ CREATE TABLE users
 	password varchar(255) NOT NULL,
 	PRIMARY KEY (id)
 );
+
+CREATE TABLE question
+(
+id int NOT NULL AUTO_INCREMENT ,
+question VARCHAR  (255) NOT NULL,
+answer VARCHAR  (255) NOT NULL,
+PRIMARY KEY(id)
+)
+	
