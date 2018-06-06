@@ -72,7 +72,7 @@ module.exports = function (app) {
      }); 
    })
 
-   app.get("/api/ques       tion", function (req, res) {
+   app.get("/api/question", function (req, res) {
     // res.json({
       VALUE("question"),
        VALUE("answer")

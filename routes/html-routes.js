@@ -3,7 +3,7 @@ var path = require("path");
 
 // Requiring our custom middleware for checking if a user is logged in
 var isAuthenticated = function (req, res, next){
-  
+  return true;
   if (req.user) {
     return next();
   }

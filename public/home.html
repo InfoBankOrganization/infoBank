@@ -10,133 +10,168 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <div class="jumbotron" style="background-color:inherit">
-        <div class="container" >
-            <h1><strong>InfoBank</strong></h1>
-            <p><h4>Expand your Knowlege at Info Bank</h4></p>
-        </div>
+  <div class="jumbotron" style="background-color:inherit">
+    <div class="container">
+      <h1>
+        <strong>InfoBank</strong>
+      </h1>
+      <p>
+        <h4>Expand your Knowlege at Info Bank</h4>
+      </p>
     </div>
-    <div main="container">
-      <div class="container1">
-          <div class="row">
-            <div class="Absolute-Center is-Responsive">
-              <div class="col-sm-12 col-md-10 col-md-offset-1">
-    <div class="center-block" style="width:700; height: 300px; background-color:#001900;">
-      <nav class="navbar navbar-expand-lg"> 
-        <!-- <"navbar-dark bg-dark"> -->
-          <a class="navbar-brand" href="#">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
+  </div>
+  <div main="container">
+    <div class="container1">
+      <div class="row">
+        <div class="Absolute-Center is-Responsive">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <div class="center-block" style="width:700; height: 300px; background-color:#001900;">
+              <nav class="navbar navbar-expand-lg">
+                <!-- <"navbar-dark bg-dark"> -->
+                <a class="navbar-brand" href="#">
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Payment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-           </div>
-           <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="/logout">
-                    Logout
-                  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home.html">Home
+                        <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </nav>
-        </nav>
-  
-      
-      <form class="form-inline my-2 my-lg-2" >
-       
-        <input class="form-control mr-sm-2" type="text" id="searchTxt" placeholder="">
-       <script>
-          var input = document.getElementById("searchTxt");
-          function searchURL() {
-               window.location = "http://www.myurl.com/search/" + input.value;
-          }
-      </script> 
-    <button class="btn btn-secondary my-2 my-sm-2" type="submit">Search Topic</button>
-   
-    
-    <!-- end nav -->
-       <div id="user">
-         <h4>Academic Staff | Student</h4>
-         <form>
-           <fieldset>
-            
-               <label for="exampleInputQuestion1"></label>
-               <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
-               <small id="questionHelp" class="form-text text-muted"></small>
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="/logout">
+                        Logout
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </nav>
 
-             <label for="inputAnwser"></label>
-             <input type="email" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
 
-             <button class="btn btn-secondary my-2 my-sm-2" type="submit">Submit</button>
- 
-   
-             <div class="input-group mb-3">
-               <div class="custom-file">
-                 <input type="file" class="custom-file-input" id="inputGroupFile02">
-                 <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-               </div>
-               <div class="input-group-append">
-                 <span class="input-group-text" id="">Upload</span>
-               </div>
-             </div>
-      
-          </fieldset>
-         </form>
-         </div>
-        </form>
-      </div>
-      </div>
-              </div>
-              </div>
+              <form class="form-inline my-2 my-lg-2">
+
+                <input class="form-control mr-sm-2" type="text" id="searchTxt" placeholder="">
+                <!-- <script>
+                  var input = document.getElementById("searchTxt");
+                  function searchURL() {
+                    window.location = "http://www.myurl.com/search/" + input.value;
+                  }
+                </script> -->
+                <button class="btn btn-secondary my-2 my-sm-2" type="submit">Search Topic</button>
+
+
+                <!-- end nav -->
+                <div id="user">
+                  <h4>Academic Staff | Student</h4>
+                  <form>
+                    <fieldset>
+
+                      <label for="exampleInputQuestion1"></label>
+                      <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
+                      <small id="questionHelp" class="form-text text-muted"></small>
+
+
+                      <label for="inputAnwser"></label>
+                      <input type="answer" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
+
+                      <button class="btn btn-secondary my-2 my-sm-2" type="submit" id="qbtn">Submit</button>
+
+
+                      <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile02">
+                          <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+
+                    </fieldset>
+                  </form>
+                </div>
+              </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript">
-    // control c to restart the server/ node server.js to connect to the server. 
+      // control c to restart the server/ node server.js to connect to the server. 
       //Add info 
       $("#qbtn").on("click", function (event) {
         event.preventDefault();
         newInput = {
-          question: $("#question").val().trim(),
-          answer: $("#answer").val().trim(),
+          question: $("#inputquestion").val().trim(),
+          answer: $("#inputAnwser").val().trim(),
         };
 
         //Display info
-        $.post("api/question", newInput)
-          .then(function (data) {
-            console.log("home", data);
+        $.ajax({
+          type: "POST",
+          url: "api/info",
+          data: newInput,
+          success: function (data) {
+            console.log("info", data);
             alert("adding info...");
-          });
+          }
+        });
 
       });
-   </script>
-    </div>
+    </script>
+  </div>
 
-    <div class="footer">
-        <p>gitHub.com</p>
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">
+            <strong>features</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="features"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
+
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <p>gitHub.com</p>
+  </div>
 </body>
- </html>
- 
+
+</html>
