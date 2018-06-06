@@ -1,4 +1,3 @@
-var connection = require("../config/connection") // this make query to the database.
 // Requiring our models and passport as we've configured it
 var passport = require("../config/passport");
 
@@ -60,28 +59,4 @@ module.exports = function (app) {
     }
   });
 
- app.post("/api/question", function (req, res) {
-
-   connection.query("INSERT INTO question SET ?", req.body, function(err){ 
-     //insert data to the connection.query(database)
-     if(err) throw err 
-    //  res.json({
-       VALUE("question"),
-       VALUE("answer")
-     
-     }); 
-   })
-
-   app.get("/api/question", function (req, res) {
-    // res.json({
-      VALUE("question"),
-       VALUE("answer")
-    });
-  }
-
-
-
-
-
-
- 
+};
