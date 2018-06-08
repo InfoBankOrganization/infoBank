@@ -56,34 +56,74 @@
             </div>
           </nav>
         </nav>
-        <!-- </nav> -->    
+        <!-- </nav> -->
+
+      <h1>
+        <strong>InfoBank</strong>
+      </h1>
+      <p>
+        <h4>Expand your Knowlege at Info Bank</h4>
+      </p>
   
-  <div main="container">  
-  <div id="user">
-  <div class="row" id="box-search">
-      <div class="thumbnail text-center">
-          <img src="assets/image/questions.png" alt="" class="img-responsive">
-          <div class="caption">
-              <h1>
-                  <strong><font color="black">InfoBank</font></strong> 
-                </h1>
-                <p>
-                  <h4><strong><font color="black">Expand your Knowlege at Info Bank</font></strong></h4>
-                </p>
-                <p><h4><font color="black">To Enter Questions & Answers </font></h4></p>
-                <p><h4><font color="black">Academic Staff | Student</font></h4></p>
-                <p><h3><font color="red">Click Me</font></h3></p>
-                
-          </div>
-      </div>
-  </div>
-  </div>
-                     
+  <div main="container">
+
+
+    <div class="container1">
+      <div class="row">
+      
+                <!-- end nav -->
+                <div id="user">
+                  <h4>Academic Staff | Student</h4>
+                  <form>
+                    <fieldset >
+
+                      <label for="exampleInputQuestion1"></label>
+                      <input type="question" class="form-control" id="inputquestion" aria-describedby="questionHelp" placeholder="Enter question">
+                      <small id="questionHelp" class="form-text text-muted"></small>
+                      <label for="inputAnwser"></label>
+                      <input type="answer" class="form-control" id="inputAnwser" aria-describedby="answerHelp" placeholder="Enter answer">
+
+                      <button class="btn btn-secondary my-2 my-sm-2" type="submit" id="qbtn">Submit</button>
+                      
+
+                    </fieldset>
+                  </form>
+                </div> 
+            
+    <script type="text/javascript">
+      // control c to restart the server/ node server.js to connect to the server. 
+      //Add info 
+      $("#qbtn").on("click", function (event) {
+        event.preventDefault();
+        newInput = {
+          question: $("#inputquestion").val().trim(),
+          answer: $("#inputAnwser").val().trim(),
+        };
+
+        //Display info
+        $.ajax({
+          type: "POST",
+          url: "api/info",
+          data: newInput,
+          success: function (data) {
+            console.log("info", data);
+            alert("adding info...");
+          }
+        });
+
+      });
+    </script>
 
   <div class="footer">
-    <p></p>
+    <p>gitHub.com</p>
   </div>
+</div>  
 </div>
+</div>
+
+<!-- </div>
+  </div> -->
+<!-- </div> -->
 </body>
 
 </html>

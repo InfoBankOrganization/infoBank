@@ -1,20 +1,29 @@
 
-   .jumbotron{
-    color:#001900;
-    /* background-color:none !important; */
-    }
+  .thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
 
     h1{
         font-size: 60px;
     }
 
    body {
-    background: url(/Users/nicolecooper/infoBank/public/image/403d21c4a993c6befb4b058833a3119d.png);
+     background-color:#001900
   }
 
    #main-container{
-      width: 940px;
+      width: auto;
   } 
+  .search-bar {
+    width: 900px;
+  }
     
     .Absolute-Center {
         margin: auto;
@@ -25,16 +34,16 @@
       .Absolute-Center.is-Responsive {
         width: 50%; 
         height: 50%;
-        min-width: 700px;
-        max-width: 650px;
+        min-width: 950;
+        max-width: 950px;
         padding: 40px;
       }
       
       #logo-container1{
         margin: auto;
         margin-bottom: 10px;
-        width:700px;
-        height:30px;
+        width:950px;
+        height:400px;
       }
 
     .form-inline 
@@ -101,3 +110,13 @@
 /* .credit-card-box .panel-heading img {
     min-width: 180px;
 }  */
+
+/* new navbar */
+/*scroll effect*/
+/* .navbar-trans {
+    background-color: transparent;
+    border: none;
+    transition: top 1s ease;
+  }
+   
+  
