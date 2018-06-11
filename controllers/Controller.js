@@ -18,12 +18,12 @@ router.get("/", function(req, res) {
 
 router.post("/api/info", function(req, res) {
   info.create([
-    "name", "sleepy"
+    "question", "answer"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.question, req.body.answer
   ], function(result) {
     // Send back the ID of the new quote
-    res.json({ id: result.insertId });
+    res.json({ id: result.id });
   });
 });
 

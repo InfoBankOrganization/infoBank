@@ -1,5 +1,8 @@
 // Requiring our models and passport as we've configured it
 var passport = require("../config/passport");
+var connection = require("../config/connection");
+
+
 
 module.exports = function (app) {
 
@@ -58,5 +61,14 @@ module.exports = function (app) {
       });
     }
   });
+app.post("/api/info", function(req, res) {
+  connection.query("INSERT INTO question VALUES ?",[{question:req.body.question,answer:req.body.answer}], function(err,result){
+    res.json(
+      result
+    )
+  })
 
+
+
+})
 };

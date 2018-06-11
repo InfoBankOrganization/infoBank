@@ -119,4 +119,63 @@
     transition: top 1s ease;
   }
    
+  /*  */
+  body{
+    font-family: 'Raleway', sans-serif;
+  }
   
+  footer{
+      background-color:whitesmoke;
+      padding: 60px 0px;
+  }
+  
+  footer ul{
+      list-style:none;
+      margin:0 auto;
+      display:inline-block;
+      padding-top:50px;
+  }
+  
+  footer ul li{
+      float:left;
+  }
+  
+  footer ul li a{
+      color:#b1aca1;
+      padding:25px;
+  }
+  
+  footer ul li a:hover{
+      color:#dee2ca;
+      text-decoration:none;
+  }
+  
+  .footer-top{
+      padding-bottom:50px;
+  }
+  
+  .footer-top .fa{
+      font-size:18px;
+      color: black;
+      padding-right:10px;
+  }
+  
+  .footer-top a{
+      color:black;
+      text-decoration:none;
+  }
+  
+  .footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
+      color:#7dabdb;
+  }
+  
+  .copyright{
+      background-color:inherit;
+  }
+  
+  .copyright p{
+      font-size:12px;
+      padding:15px 0 10px 0;
+      position: absolute;
+
+  }

@@ -27,7 +27,7 @@ $(function() {
 
     var newInfo = {
       name: $("#ca").val().trim(),
-      sleepy: $("[name=sleepy]:checked").val().trim()
+      question: $("[question=answer]:checked").val().trim()
     };
 
     // Send the POST request.
